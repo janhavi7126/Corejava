@@ -1,0 +1,9 @@
+Platform Independent is one of the java features that enables java program to run anywhere anytime.
+At first, Java compiler (Javac) convert Java classes (with .java extension) to Bytecode that is .class file.
+The Bytecode has supported in all operating systems (like Mac, Windows, and Linux).
+JVM or Java Virtual Machine is then responsible for executing code line-by-line.(which converts byte code to machinde code)
+ In JVM, three stage performed:
+◼ Class Loader - loads classes to heap memory
+◼ Bytecode Verified -checks if theres any issue
+◼ Java-In-Time Compiler 
+In which If our Code doesn't have any issue, the Just-In-Time (JIT) compiler converts it to Native Machine code. 
