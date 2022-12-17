@@ -1,0 +1,338 @@
+1.Fullform of JDK, JVM ,JRE,JIT
+
+JDK-java development kit(It is responsible for compiling)
+It is a platform independent
+
+JVM- Java virtual machine (It is reponsible for executing java program line by line )
+It is a platform dependent
+
+JRE -Java runtime environment (to only run not to develop)
+
+java is a platform independent
+
+JIT-just in time compiler
+
+
+JDK= JRE+ Development tool
+JRE = JVM + library classes
+
+2.Java code -> javac compiler  ->  Byte code(generates class file) ->  JVM
+
+
+3.Functions of java
+
+1. Simple
+2. Platform Independent
+3. compile and interpreted
+4. Multithreading
+5. Portable
+
+
+4. Differnce between print and println
+print is without newline character and println is with newline character
+
+What is identifier?
+To name the things like class ,variable and methods
+
+what is keywords?
+predefined reserved words of any programming language which has a special meaning .
+
+what are literals?
+A constant value in java ( int ,float, char , string) is created by using literal representation value given to the variable with specific data.
+
+what are operators ->assignment,arithmetic,logical ,++ increment, --, relational...
+
+What is Tokens?
+The Java compiler breaks the line of code into text (words) is called Java tokens. 
+
+How to access the variable of class?
+Dot operator is used to access variable of class .
+
+instance variable: variable declared within the class.
+Object is a instance of class.
+
+What are Static variables?
+Static variable are the variables that are shared between all objects this variable is the class variable they belongs to the class , we can access them using the name of the class (not required to create an instance of the class)or object name 
+A static method can not access instance variables or methods
+A static method can only access static variable and static methods
+
+what are static blocks?
+Static block is such kind of block that executes at the time of compilation and when.classfile generates (before main method). 
+
+no name to static block , it only execute once
+class A
+{
+	static{
+	
+	}
+	main method cumpulsory
+
+}
+main function variable can change static value also
+*execution order:
+first static 
+then instance block means any block near static 
+then constructor
+
+
+Difference between instaance block and static block?
+		Instance block                         Static Block
+
+1.      instance block execute                 executes at the time of         
+	at the time of abject                  compilation and when.classfile
+	creation.                              generates.
+ 
+2.      can access static variable             can only access static variable 
+	as well as non static                  and static methods.                             
+	variable 
+
+
+
+Final is a keyword/ modifier that provides restrictions in Java we can use final in three ways:(variable, method, class)
+Once we declare a variable final we can not re-assign it
+
+Final method :
+Whenever we declare a method as a final it cannot be overridden to our extended class
+
+
+new:
+new kyword allocates memory at runtime
+
+
+********************************************************************  OOP    ***************************************************************************
+  
+
+What are oop and its feature?
+It is Object Oriented Programming languange deal real world entity and its features includes Abstraction , inheritance, polymorphism and  encapsulation.
+
+
+Polymorphism 
+Same object with different behaviour/forms
+2 types 
+a)compile time polymorphism
+	(also called as static polymorphism) 
+	(Which exist at the time of compilations)
+	(includes Method overloading)
+
+b)run time polymorphism
+	(also called as dynamic polymorphism) 
+	(Which exist at the run time)(through jvm)
+	(includes Method overriding)
+
+
+
+
+
+What is Method overloading?
+A class containing more than one method having same name with different parameters is called method overloading 
+
+What is method overriding?
+In a super class and subclass if we write the same method with same parameters is called method overriding.
+
+
+Rules
+if method not exist in super class compilation error
+if exist in superclass and not overriden by sub class then calls superclass method
+if exist in superclass and overriden by sub class then calls subclass method
+
+What is encapsulation?
+mechanism of wraping data variables/members and member methods of class in a single unit is called encapsulation.
+This is done by using set and get method (the private variable can be accessed by the public or current class with the help of encapsulation).
+
+What is inheritance?
+When a new class extends another existing class and then have all the properties of that class is called inheritance.
+
+*some Features of inheritance: 
+extends keyword is used to inherit.
+provide reusablity of existing class
+cant access private member of existing class 
+object of subclass is created.
+method overriding is only possible in inheritance. 
+
+
+What are the types of inheritance?
+1. Simple inheritance
+one super class and its one subclass
+2.multilevel inheritance
+Super class having sub class , subclass having another subclass andd the very last subclass have all the properties of first superclass.
+3.Herarchical inheritance
+One super class having more than one subclass
+4.Multiple inheritance
+one subclass having more than one superclass (NOT SUPORTED BY JAVA)
+
+What is super keyword and why it is used?
+When the super class and sub class have same name of variable, methods ond contructors and we want to call super class variable, methods ond contructors then super key word is used , it helps us to avoid the confusion.
+
+What is the use of this keyword?
+to differentiate between the instance variable and local variable(variable inside the constructor) when both having same name we use this keyword .
+this keyword refers to current object inside a method /constructor.
+
+What is abstraction?(hides the implementation and showing only services)
+Includes abstract class and interface 
+Abstract class:
+1. The class with abstract keyword
+2. the class having both complete and incomplete methods 
+3. the methods must be completed by the other class which extends it
+are called as abstract class.
+Object cannot be created by abstract class
+
+Abstract Method:
+1. if the abstract method exist in any class then that class should be declare as abstract by using abstract keyword
+2. it dosent contain body.
+
+
+Interface :
+1. The class with interface keyword
+2. the class having only incomplete methods 
+3. all methods must be completed by the other class which implements it
+are called as interface class.
+here, Interface can extends another interface
+     a class can implements more than one interfaces
+Object cannot be created by interface 
+
+What is new key word?
+new key words create new object and used to allocate dynamic memory at runtime.
+
+
+What are constructors?
+.A special method available in java 
+.having same name as class name 
+.does not have any return type 
+.No explicit calling  , it is called at the time of object creation.
+.parameters are used to distinguish between the constructor
+
+***************************************************  String Manipulation  *************************************************
+what are strings
+A string in literals , a sequence of character  
+
+What is string buffer?
+in java we cannote manipulate string to modify the string we use string buffer
+
+
+Methods of string
+
+String charAt()                                                returns a char value at the given index number
+String compareTo()                                             < returns 0 ,> returns 1, ==returns 0
+String concat()                                                concat two string
+String contains()                                              returns true if the sequence of char values found in string otherwise returns false.                        String equals()                                                compares the two given strings
+String equalsIgnoreCase()                                      compares the two given strings irrespective of the case (lower and upper) of the string.         
+String getBytes()                                              string into the sequence of bytes and keeps it in an array of bytes
+String getChars()                                              copies the content of this string into a specified char array.
+String indexOf()                                               returns the position of the first occurrence of the specified character
+String isEmpty()                                               to know is empty or not
+String lastIndexOf()                                           last index of the given character value or substring.
+String length()                                                finds the length of a string.
+String replace()                                               returns a string replacing  the old char to new char
+String replaceAll()                                            replace all the occurrences of a single character
+String split()                                                 splits this string and return char array
+String startsWith()                                            It returns true if this string starts with the given prefix else returns false.
+String substring()                                             returns a part of the string
+String toCharArray()                                           converts this string into character array.
+String toLowerCase()                                           returns the string in lowercase letter
+String toUpperCase()                                           returns the string in uppercase letter
+String trim()                                                  removes the spaces
+String valueOf()                                               converts different types of values into string.
+
+
+
+****************************************************************** Pakages  ********************************************************************
+
+What are pakages?
+A java package is a group of similar types of classes, interfaces and sub-packages.
+There are two types in pakages :
+	Built-in pakage
+	user defined pakage
+There are many built-in packages such as java, lang, awt, javax, swing, net, io, util, sql etc.
+
+
+How the pakage is created is java?
+Using keyword pakage pakagename.
+
+How to compile java pakage?
+compile: javac -d . pakagefilename.java
+compile: javac -d . javafilename.java  
+run:java pakagename.javafilename
+
+How to use the methods of any pakage:
+import pakagename;
+
+Name the  access modifier and define
+
+Private: The access level of a private modifier is only within the class. It cannot be accessed from outside the class.
+
+Default: The access level of a default modifier is only within the package. It cannot be accessed from outside the package. If you do not specify any access level, it will be the default.
+
+Protected: The access level of a protected modifier is within the package and outside the package through child class. If you do not make the child class, it cannot be accessed from outside the package.
+
+Public: The access level of a public modifier is everywhere. It can be accessed from within the class, outside the class, within the package and outside the package.
+
+
+
+*************************************************************   Exception Handling  *******************************************************************
+
+What is Exception Handling?
+Exception Handling is used to handle runtime errors such as ClassNotFoundException, IOException, SQLException, RemoteException, etc.
+
+
+Types of Java Exceptions
+1.Checked Exception
+2.Unchecked Exception
+3.Error
+
+Checked Exception
+Checked exceptions are checked at compile-time.For example, IOException, SQLException, etc. Checked exceptions are checked at compile-time.
+
+Unchecked Exception
+Unchecked exceptions  are checked at runtime. For example, ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException, etc.
+
+ERROR
+Error is irrecoverable. For example are OutOfMemoryError, VirtualMachineError, AssertionError etc.
+
+
+Try block
+The try block is used to enclose the code that might throw an exception. 
+It means we can't use try block alone. 
+The try block must be used with either catch or finally.
+
+Catch block:
+ catch block is used to handle the Exception by declaring the type of exception within the parameter.
+we can't use catch block alone.
+
+Finally block:
+Finally block is executed whether an exception is handled or not.
+
+Throw
+The throw keyword is used to manually throw an exception.
+
+
+The throws keyword is used to declare exceptions. 
+It specifies that there may occur an exception in the method. 
+It doesn't throw an exception. 
+It is always used with method signature.
+
+
+Exception is subclass of throwable class
+
+
+1.Throw inside the method                  Throws is with method signature
+
+2.can throws one exception at a time          can throw number of exceptions 
+
+3.throw handle run time error                throws handle compile time error 
+
+4.
+
+Explain Runtime errors
+
+ArithmeticException:
+If we divide any number by zero ArithmeticException occurs
+
+NullPointerException
+If we have a null value in any variable, performing any operation on the variable throws a NullPointerException.
+
+NumberFormatException:
+If we have a string variable that has characters converting this variable into digit will cause NumberFormatException.
+
+ArrayIndexOutOfBoundsException
+When an array exceeds to it's size, the ArrayIndexOutOfBoundsException occurs.
+
