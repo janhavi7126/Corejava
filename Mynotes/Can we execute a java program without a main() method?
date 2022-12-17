@@ -1,3 +1,4 @@
 main method is the entry point of java code to run or execute so normally if main method is not there it will give you error of no main method found.
+The program will get converted to bytecode but will not get execute further.
 but it is said that it will run if we use static block which actually executes before the main method and System.exit(0);which will prevent it to compile further 
 [but its valid only for java version up to 6]
