@@ -1,0 +1,3 @@
+JDK is java development kit and in which jre(package) java run time environment is there helps in providing environment to run java program 
+also jdk consist of java development tools like compiler, debugger, and other development tools.
+WHILE jvm java virtual machine is interpreter and  is responsible for executing code line-by-line.which converts byte code into machine language.
