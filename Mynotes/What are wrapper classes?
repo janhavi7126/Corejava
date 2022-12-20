@@ -1,0 +1,32 @@
+It basically helps to convert primitive to object and object to primitive
+Example:
+int a= 6;
+Integer  i = integer.valueOf(a);
+Here a is variable i.e primitive
+And i is object 
+
+Here we converted primitive to object
+
+Example 2 
+String str=''; this can be said as object S is capital
+Int x;
+x = Integer.parseInt(str)
+
+x primitive variable
+
+str is object 
+Converts object to primitive
+
+Or Integer a = new Integere() //object
+int b = a.intValue() ; b is primitive variable
+
+1st one is said to be auto boxing
+Automatic conversion of P to O 
+int b;
+Integer a = b;
+
+Unboxing again vice versa automatic
+Object to primitive
+
+
+int b = a;
