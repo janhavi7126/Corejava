@@ -1,0 +1,4 @@
+When nested try blocks are used, the inner try block is executed first. 
+Any exception thrown in the inner try block is caught in the corresponding catch block. 
+If a matching catch block is not found, then catch block of the outer try block are inspected until all nested try statements are exhausted. 
+If no matching blocks are found, the Java Runtime Environment handles the execution.
