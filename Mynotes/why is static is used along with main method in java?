@@ -1,0 +1,3 @@
+as normally to execute a method we need a call which can be done only when we create an (instance of a class)i.e object.
+but if static is present then JVM dosent require to instantiate the class to execute main method 
+so the method is invoked without instantiating 
