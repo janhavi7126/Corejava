@@ -1,0 +1,4 @@
+Every try should have at least one catch block
+it says we can have 1 or more than one catch block
+the priority for the catch block is based on the order in which they are defined.
+If the first catch block cannot handle the identified exception object then it considers the immediate next catch block.
