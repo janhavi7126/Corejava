@@ -1,0 +1,12 @@
+1
+Array is static in size  that is - while initializing we have to provide a size which is fixed
+In Arraylist we can resize it when needed as it does not have fixed size
+2
+Array can be multidimensional 
+while arraylist is single dimensional only
+3
+Array is dynamically created object
+Arraylist is a class of java collection framework
+4
+Arraylist has slow performance bcoz of resizing 
+Array has faster performance than arraylist
