@@ -1,0 +1,10 @@
+Because Maps work with key/value pairs, while the other collections work with just values.
+Both key and values are objects. The key must be unique but the values can be duplicate.
+These are commonly used methods defined by Map interface
+
+boolean containsKey(Object k): returns true if map contain k as key. Otherwise false.
+Object get(Object k) : returns values associated with the key k.
+Object put(Object k, Object v) : stores an entry in map.
+Object putAll(Map m) : put all entries from m in this map.
+Set keySet() : returns Set that contains the key in a map.
+Set entrySet() : returns Set that contains the entries in a map.
